@@ -1,0 +1,27 @@
+.wrapper {
+    width: 100%;
+    padding: 0 70px;
+
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--primary-color-1);
+        border-radius: 12px;
+        padding: 10px;
+
+        .warning-message {
+            text-align: center;
+
+            & > p {
+                padding: 20px 0;
+                margin: 20px 0;
+
+                &.message-primary {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

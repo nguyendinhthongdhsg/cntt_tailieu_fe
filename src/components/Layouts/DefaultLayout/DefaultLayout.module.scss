@@ -1,0 +1,21 @@
+.wrapper {
+    width: 100vw;
+
+    .content {
+        width: 100%;
+        position: relative;
+        padding-left: var(--with-navbar);
+        padding-right: 20px;
+
+        .header {
+            padding: 16px 0;
+        }
+
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+    }
+}

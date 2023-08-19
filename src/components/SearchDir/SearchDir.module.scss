@@ -1,0 +1,46 @@
+.wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+
+    .content {
+        margin: 0 70px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        border: 1px solid var(--border-color);
+        border-radius: 40px;
+        box-shadow: var(--box-shadow-color);
+        transition: box-shadow 0.2s var(--itr-yy-z);
+
+        &:hover {
+            box-shadow: var(--hover-box-shadow-color);
+        }
+
+        input {
+            flex: 1;
+            height: 40px;
+            padding: 0 12px;
+        }
+
+        button {
+            height: 30px;
+            width: 30px;
+            margin-right: 6px;
+            background-color: unset;
+            background-color: var(--primary-color-1);
+            border-radius: 50%;
+            transition: background-color 0.2s linear;
+
+            &:hover {
+                background-color: var(--primary-color-2);
+            }
+
+            .search-icon {
+                color: var(--white-color);
+                position: relative;
+                right: -1px;
+                bottom: -2px;
+            }
+        }
+    }
+}

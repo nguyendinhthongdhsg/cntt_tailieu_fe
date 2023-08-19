@@ -1,0 +1,29 @@
+.wrapper {
+    width: 100%;
+
+    .content {
+        width: 100%;
+
+        .heading {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .list {
+            margin-top: 20px;
+            display: flex;
+
+            li {
+                width: 24%;
+                margin: 0 10px;
+            }
+
+            .null-data {
+                width: 100%;
+                text-align: center;
+                padding: 12px 0;
+                color: #5b5b5b;
+            }
+        }
+    }
+}

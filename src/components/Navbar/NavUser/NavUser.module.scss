@@ -1,0 +1,38 @@
+.wrapper {
+    padding: 0 0 6px 0;
+    border-bottom: 1px solid var(--black-color);
+
+    .user-info {
+        display: flex;
+        align-items: center;
+
+        .user-img {
+            position: relative;
+            margin-top: -2px;
+        }
+
+        .user-name {
+            margin-left: 12px;
+            font-weight: 500;
+        }
+    }
+
+    .user-menu {
+        & > li {
+            display: flex;
+            align-items: center;
+            margin: 16px 0;
+            cursor: pointer;
+
+            &:hover {
+                color: #313131;
+            }
+
+            .item-icon {
+                position: relative;
+                margin-top: -2.5px;
+                margin-right: 6px;
+            }
+        }
+    }
+}
