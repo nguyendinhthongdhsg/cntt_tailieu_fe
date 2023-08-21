@@ -12,10 +12,11 @@
         .list {
             margin-top: 20px;
             display: flex;
+            flex-wrap: wrap;
 
             li {
-                width: 24%;
-                margin: 0 10px;
+                width: calc(100% / 3);
+                padding: 0 1.5%;
             }
 
             .null-data {
@@ -23,6 +24,35 @@
                 text-align: center;
                 padding: 12px 0;
                 color: #5b5b5b;
+            }
+        }
+    }
+}
+
+@media (min-width: 500px) and (max-width: 640px) {
+    .wrapper {
+        .content {
+            .list {
+                li {
+                    width: calc(100% / 2);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .wrapper {
+        .content {
+            .list {
+                li {
+                    width: 100%;
+                    padding: 3% 0;
+
+                    &:first-child {
+                        padding-top: unset;
+                    }
+                }
             }
         }
     }

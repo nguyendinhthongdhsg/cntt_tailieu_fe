@@ -16,6 +16,29 @@
             top: 0;
             left: 0;
             z-index: 1;
+
+            .showNav {
+                display: none;
+                position: absolute;
+                top: 50%;
+                right: -20px;
+                z-index: 1;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .wrapper {
+        .content {
+            padding: 0 20px;
+            .nav {
+                left: calc(-1 * 100%);
+                transition: left 0.2s ease-in-out;
+                .showNav {
+                    display: block;
+                }
+            }
         }
     }
 }

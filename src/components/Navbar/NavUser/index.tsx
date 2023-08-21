@@ -9,6 +9,8 @@ import { BiSolidDashboard } from 'react-icons/bi';
 import { IoLibrary } from 'react-icons/io5';
 import Link from 'next/link';
 import { TypeUser } from '@/Types';
+import { GrClose } from 'react-icons/gr';
+import { useMediaQuery } from 'react-responsive';
 
 const cx = classNames.bind(styles);
 
@@ -17,6 +19,16 @@ interface NavUserProps {
 }
 
 const NavUser: React.FC<NavUserProps> = ({ user }) => {
+    const isTabletOrMobile = useMediaQuery({
+        query: '(max-width: 1024px)',
+    });
+
+    // tab and mobile
+    function closeNavMobile() {
+        const navDef = document.getElementById('navigation-bar') as HTMLDivElement;
+        navDef.style.left = 'calc(-1*100%)';
+    }
+
     return (
         <div className={cx('wrapper')}>
             <div className={cx('user-info')}>
@@ -26,9 +38,10 @@ const NavUser: React.FC<NavUserProps> = ({ user }) => {
                     height={50}
                     src={logoBCHkhoa.src}
                     alt="logo BCH"
-                    priority={true}
+                    priority={!isTabletOrMobile}
                 />
                 <p className={cx('user-name')}>{user.name}</p>
+                <GrClose onClick={closeNavMobile} className={cx('user-close-nav')} size={16} />
             </div>
             <ul className={cx('user-menu')}>
                 <li>

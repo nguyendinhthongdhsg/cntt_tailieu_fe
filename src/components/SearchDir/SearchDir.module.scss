@@ -44,3 +44,11 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .wrapper {
+        .content {
+            margin: 0;
+        }
+    }
+}

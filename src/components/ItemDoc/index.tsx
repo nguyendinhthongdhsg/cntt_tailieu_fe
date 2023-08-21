@@ -14,6 +14,7 @@ interface ItemDocProps {
 
 const ItemDoc: React.FC<ItemDocProps> = ({ doc }) => {
     function download() {
+        toast.success('Đang tải xuống...');
         axios({
             url: URL_BACKEND + `/fileDoc?q=${doc.fileId}`,
             method: 'GET',

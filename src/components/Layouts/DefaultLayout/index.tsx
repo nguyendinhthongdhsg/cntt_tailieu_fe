@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar';
 import { ReactNode } from 'react';
 import styles from './DefaultLayout.module.scss';
 import Heading from '@/components/Heading';
+import ShowNav from '@/components/ShowNav';
 
 const cx = classNames.bind(styles);
 
@@ -20,7 +21,10 @@ const DefaultLayout: React.FC<DefaultLayoutProps> = ({ user, children, heading }
                 <header className={cx('header')}>
                     <Heading heading={heading} />
                 </header>
-                <div className={cx('nav')}>
+                <div id="navigation-bar" className={cx('nav')}>
+                    <div className={cx('showNav')}>
+                        <ShowNav />
+                    </div>
                     <Navbar user={user} />
                 </div>
                 <div className={cx('content-main')}>{children}</div>
