@@ -43,6 +43,7 @@ export default function Login() {
                             src={artBoardLogoBCH.src}
                             priority={true}
                             alt="Logo BCH"
+                            className={cx('item-header-img')}
                         />
                     </div>
                     <div className={cx('item-account')}>

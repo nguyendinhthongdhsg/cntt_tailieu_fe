@@ -76,3 +76,26 @@
         }
     }
 }
+
+@media (max-width: 1624px) {
+    .wrapper {
+        .validation {
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .wrapper {
+        .validation {
+            .form {
+                & > div {
+                    .item-header-img {
+                        width: 90%;
+                        height: 70px;
+                    }
+                }
+            }
+        }
+    }
+}
