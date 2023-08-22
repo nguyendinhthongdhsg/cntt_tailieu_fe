@@ -142,7 +142,6 @@ export default function DashboardCreate() {
                                 id="subGenre"
                                 placeholder="Chọn môn học"
                                 spellCheck={false}
-                                multiple
                                 title="Chọn môn học"
                             >
                                 <option value="">Chọn loại môn học</option>
@@ -202,7 +201,6 @@ export default function DashboardCreate() {
                                 id="docSub"
                                 placeholder="Chọn môn học"
                                 spellCheck={false}
-                                multiple
                                 title="Chọn môn học"
                             >
                                 <option value="">Chọn môn học</option>

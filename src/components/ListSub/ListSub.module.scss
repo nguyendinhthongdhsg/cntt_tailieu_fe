@@ -50,14 +50,15 @@
 
             & > a {
                 display: block;
+                height: 100%;
                 width: 100%;
                 position: relative;
-                overflow: hidden;
+
                 & > h3 {
+                    height: 100%;
                     font-size: 0.9rem;
                     font-weight: normal;
                     color: var(--black-color);
-                    height: 16px;
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space: nowrap;
