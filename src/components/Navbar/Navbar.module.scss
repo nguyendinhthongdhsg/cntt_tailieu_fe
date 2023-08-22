@@ -12,6 +12,8 @@
         border-radius: 12px;
         box-shadow: var(--box-shadow-color);
         transition: box-shadow 0.2s var(--itr-yy-z);
+        display: flex;
+        flex-direction: column;
 
         &:hover {
             box-shadow: 0 0 2px 2px #00000010;
