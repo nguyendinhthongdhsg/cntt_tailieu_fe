@@ -39,6 +39,7 @@
 
         &.open {
             height: unset;
+            overflow-y: auto;
         }
 
         & > li {
