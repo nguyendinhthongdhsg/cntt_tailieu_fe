@@ -7,7 +7,6 @@ import axios from 'axios';
 import { URL_BACKEND } from '@/config';
 import { toast } from 'react-hot-toast';
 import { TypeSubject } from '@/Types';
-import Loading from '@/components/Loading';
 
 const cx = classNames.bind(styles);
 
