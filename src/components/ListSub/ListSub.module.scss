@@ -52,11 +52,15 @@
                 display: block;
                 width: fit-content;
                 position: relative;
+                overflow: hidden;
                 & > h3 {
                     font-size: 0.9rem;
                     font-weight: normal;
                     color: var(--black-color);
                     height: 16px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
                 }
 
                 &::after {
