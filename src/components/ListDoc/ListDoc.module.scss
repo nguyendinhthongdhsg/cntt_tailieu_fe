@@ -11,13 +11,13 @@
         }
 
         .list {
-            margin-top: 20px;
             display: flex;
             flex-wrap: wrap;
+            margin-top: 10px;
 
             li {
                 width: calc(100% / 3);
-                padding: 0 1.5%;
+                padding: 10px 1.5%;
 
                 &:first-child {
                     padding-left: 16px;
@@ -69,7 +69,6 @@
                     padding: 3% 0;
 
                     &:first-child {
-                        padding-top: unset;
                         padding-left: unset;
                     }
 
