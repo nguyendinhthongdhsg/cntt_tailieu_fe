@@ -8,10 +8,18 @@ import { getServerSession } from 'next-auth';
 export default async function Subject() {
     const session = await getServerSession(authOptions);
     const user = session?.user;
+
     if (!user?.name) {
+        const fakeUser = {
+            name: 'Sinh viên khoa CNTT - SGU',
+            email: '',
+        };
         return (
             <main>
-                <Login />
+                <DefaultLayout user={fakeUser} heading="">
+                    <SearchDir />
+                    <ListDoc />
+                </DefaultLayout>
             </main>
         );
     }

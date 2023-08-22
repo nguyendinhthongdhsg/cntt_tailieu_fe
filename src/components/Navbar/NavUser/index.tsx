@@ -54,10 +54,12 @@ const NavUser: React.FC<NavUserProps> = ({ user }) => {
                         </Link>
                     </li>
                 )}
-                <li>
-                    <RiLogoutBoxRFill size={16} className={cx('item-icon')} />
-                    <div onClick={() => signOut()}>Đăng xuất</div>
-                </li>
+                {user.email && (
+                    <li>
+                        <RiLogoutBoxRFill size={16} className={cx('item-icon')} />
+                        <div onClick={() => signOut()}>Đăng xuất</div>
+                    </li>
+                )}
             </ul>
         </div>
     );

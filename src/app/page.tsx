@@ -10,12 +10,20 @@ export default async function Home() {
     const session = await getServerSession(authOptions);
     const user = session?.user;
     if (!user?.name) {
+        const fakeUser = {
+            name: 'Sinh viên khoa CNTT - SGU',
+            email: '',
+        };
         return (
             <main>
-                <Login />
+                <DefaultLayout user={fakeUser} heading="">
+                    <SearchDir />
+                    <Warning />
+                </DefaultLayout>
             </main>
         );
     }
+
     return (
         <main>
             <DefaultLayout user={user} heading="">
