@@ -1,6 +1,6 @@
 .wrapper {
     width: 100%;
-    padding: 0 70px;
+    padding: 0 16px;
 
     .content {
         width: 100%;
@@ -20,6 +20,27 @@
 
                 &.message-primary {
                     font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .wrapper {
+        padding: 0;
+
+        .content {
+            padding: 20px;
+
+            .warning-img {
+                width: 90%;
+                height: fit-content;
+            }
+
+            .warning-message {
+                & > p {
+                    text-align: justify;
                 }
             }
         }

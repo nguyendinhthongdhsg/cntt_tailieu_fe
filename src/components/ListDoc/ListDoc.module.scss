@@ -7,6 +7,7 @@
         .heading {
             font-size: 1.2rem;
             font-weight: 500;
+            margin-left: 16px;
         }
 
         .list {
@@ -17,6 +18,14 @@
             li {
                 width: calc(100% / 3);
                 padding: 0 1.5%;
+
+                &:first-child {
+                    padding-left: 16px;
+                }
+
+                &:last-child {
+                    padding-right: 16px;
+                }
             }
 
             .null-data {
@@ -24,6 +33,16 @@
                 text-align: center;
                 padding: 12px 0;
                 color: #5b5b5b;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .wrapper {
+        .content {
+            .heading {
+                margin-left: unset;
             }
         }
     }
@@ -51,6 +70,11 @@
 
                     &:first-child {
                         padding-top: unset;
+                        padding-left: unset;
+                    }
+
+                    &:last-child {
+                        padding-right: unset;
                     }
                 }
             }

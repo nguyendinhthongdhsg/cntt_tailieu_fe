@@ -19,14 +19,10 @@ interface NavUserProps {
 }
 
 const NavUser: React.FC<NavUserProps> = ({ user }) => {
-    const isTabletOrMobile = useMediaQuery({
-        query: '(max-width: 1024px)',
-    });
-
     // tab and mobile
     function closeNavMobile() {
         const navDef = document.getElementById('navigation-bar') as HTMLDivElement;
-        navDef.style.left = 'calc(-1*100%)';
+        navDef.style.left = '-100%';
     }
 
     return (
@@ -38,7 +34,7 @@ const NavUser: React.FC<NavUserProps> = ({ user }) => {
                     height={50}
                     src={logoBCHkhoa.src}
                     alt="logo BCH"
-                    priority={!isTabletOrMobile}
+                    priority={true}
                 />
                 <p className={cx('user-name')}>{user.name}</p>
                 <GrClose onClick={closeNavMobile} className={cx('user-close-nav')} size={16} />

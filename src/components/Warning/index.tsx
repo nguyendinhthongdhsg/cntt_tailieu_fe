@@ -10,6 +10,7 @@ export default function Warning() {
         <div className={cx('wrapper')}>
             <div className={cx('content')}>
                 <Image
+                    className={cx('warning-img')}
                     src={artBoardLogoBCH.src}
                     width={400}
                     height={90}

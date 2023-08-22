@@ -4,6 +4,7 @@
         width: 40px;
         height: 8px;
         background-color: var(--primary-color-1);
+        box-shadow: var(--hover-box-shadow-color);
 
         .icon-show {
             position: absolute;
@@ -11,6 +12,7 @@
             top: -9px;
             border-radius: 50%;
             background-color: var(--primary-color-1);
+            box-shadow: var(--hover-box-shadow-color);
             padding: 4px;
             display: flex;
             justify-content: center;

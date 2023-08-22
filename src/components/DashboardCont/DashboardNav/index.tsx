@@ -36,7 +36,7 @@ export default function DashboardNav() {
                         passHref
                         className={cx(pathName === '/dashboard/delete' && 'active')}
                     >
-                        Xóa hihi
+                        Xóa
                     </Link>
                 </li>
             </ul>
