@@ -48,7 +48,9 @@ const ListSub: React.FC<ListSubProps> = ({ genre, headerGen }) => {
                         return (
                             <li key={index} style={{ order: item.index }}>
                                 <Link href={`/subject?s=${item.id}`} passHref>
-                                    <h3>{item.name}</h3>
+                                    <h3>
+                                        ({item.id}) {item.name}
+                                    </h3>
                                 </Link>
                             </li>
                         );
