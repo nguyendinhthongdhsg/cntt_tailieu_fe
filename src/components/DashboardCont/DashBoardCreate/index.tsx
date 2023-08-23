@@ -148,7 +148,10 @@ export default function DashboardCreate() {
                                 <option value="dai_cuong">Đại cương</option>
                                 <option value="co_so_nganh">Cơ sở ngành</option>
                                 <option value="kien_thuc_nganh">Kiến thức ngành</option>
-                                <option value="chuyen_nganh">Chuyên ngành</option>
+                                <option value="he_thong_thong_tin">Hệ thống thông tin</option>
+                                <option value="ky_thuat_may_tinh">Kỹ thuật máy tính</option>
+                                <option value="khoa_hoc_may_tinh">Khoa học máy tính</option>
+                                <option value="ky_thuat_phan_mem">Kỹ thuật phần mềm</option>
                             </select>
                         </div>
                         <div className={cx('form-sub-item')}>

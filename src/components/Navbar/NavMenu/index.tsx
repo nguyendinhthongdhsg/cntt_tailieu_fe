@@ -11,7 +11,10 @@ export default function NavMenu() {
             <ListSub genre="dai_cuong" headerGen="Đại cương" />
             <ListSub genre="co_so_nganh" headerGen="Cơ sở ngành" />
             <ListSub genre="kien_thuc_nganh" headerGen="Kiến thức ngành" />
-            <ListSub genre="chuyen_nganh" headerGen="Chuyên ngành" />
+            <ListSub genre="he_thong_thong_tin" headerGen="Hệ thống thông tin" />
+            <ListSub genre="ky_thuat_may_tinh" headerGen="Kỹ thuật máy tính" />
+            <ListSub genre="khoa_hoc_may_tinh" headerGen="Khoa học máy tính" />
+            <ListSub genre="ky_thuat_phan_mem" headerGen="Kỹ thuật phần mềm" />
         </div>
     );
 }
